@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,31 +14,34 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_dev_profile" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Devslopes BG - June 2017-1920x1080" translatesAutoresizingMaskIntoConstraints="NO" id="xBz-ac-Ufb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="qoc-ft-bEW"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopesProfileLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bMp-Cd-IiA">
-                                <rect key="frame" x="15" y="120" width="120" height="120"/>
+                                <rect key="frame" x="15" y="134" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="jIz-ia-bjH"/>
                                     <constraint firstAttribute="height" constant="120" id="s0Z-G0-9aU"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRO-IJ-Htg">
-                                <rect key="frame" x="153" y="167.5" width="74.5" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRO-IJ-Htg">
+                                <rect key="frame" x="153" y="181.5" width="84.5" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="27"/>
+                                </variation>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="9m8-gz-nvR">
-                                <rect key="frame" x="26" y="341" width="297" height="140"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="9m8-gz-nvR">
+                                <rect key="frame" x="58.5" y="355" width="297" height="140"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data Image" translatesAutoresizingMaskIntoConstraints="NO" id="2pq-bO-mfW">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
@@ -46,6 +49,11 @@
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="140" id="cna-6C-AiI"/>
                                             <constraint firstAttribute="width" secondItem="2pq-bO-mfW" secondAttribute="height" multiplier="1:1" id="lt1-hs-cb6"/>
                                         </constraints>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <exclude reference="lt1-hs-cb6"/>
+                                            </mask>
+                                        </variation>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images Image" translatesAutoresizingMaskIntoConstraints="NO" id="CNM-Zx-dQj">
                                         <rect key="frame" x="157" y="0.0" width="140" height="140"/>
@@ -53,7 +61,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="Gko-iA-oJ5">
-                                <rect key="frame" x="73" y="264" width="229" height="57"/>
+                                <rect key="frame" x="92.5" y="278" width="229" height="57"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0A-h1-ofX">
                                         <rect key="frame" x="0.0" y="0.0" width="57" height="57"/>
@@ -73,33 +81,105 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="qFc-bg-3Tv">
+                                <rect key="frame" x="58.5" y="510" width="297" height="140"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Videos Image" translatesAutoresizingMaskIntoConstraints="NO" id="4Vo-vl-j2q">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="4Vo-vl-j2q" secondAttribute="height" multiplier="1:1" id="H9O-dT-14U"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="140" id="o9N-dj-4HZ"/>
+                                        </constraints>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <exclude reference="H9O-dT-14U"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Code" translatesAutoresizingMaskIntoConstraints="NO" id="gZR-r6-BId">
+                                        <rect key="frame" x="157" y="0.0" width="140" height="140"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35Q-OB-yUZ">
+                                <rect key="frame" x="223" y="871" width="322" height="55"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="322" id="NrN-cV-nDY"/>
+                                    <constraint firstAttribute="height" constant="55" id="mR5-x4-fu0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="Customize Dashboard">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="iRO-IJ-Htg" firstAttribute="centerY" secondItem="bMp-Cd-IiA" secondAttribute="centerY" constant="15" id="3Ou-sx-ZzH"/>
                             <constraint firstItem="9m8-gz-nvR" firstAttribute="top" secondItem="Gko-iA-oJ5" secondAttribute="bottom" constant="20" id="Bp5-ze-zH5"/>
                             <constraint firstItem="Gko-iA-oJ5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DHq-wO-y64"/>
                             <constraint firstItem="iRO-IJ-Htg" firstAttribute="leading" secondItem="bMp-Cd-IiA" secondAttribute="trailing" constant="18" id="DvT-lv-HsP"/>
+                            <constraint firstItem="35Q-OB-yUZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HJ8-tL-Ogv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gko-iA-oJ5" secondAttribute="trailing" constant="15" id="Nda-hX-de6"/>
+                            <constraint firstItem="9m8-gz-nvR" firstAttribute="top" secondItem="bMp-Cd-IiA" secondAttribute="bottom" constant="50" id="Rif-0P-TqJ"/>
                             <constraint firstItem="xBz-ac-Ufb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Swu-yE-aZd"/>
-                            <constraint firstItem="9m8-gz-nvR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VX6-gH-NQ4"/>
+                            <constraint firstItem="qFc-bg-3Tv" firstAttribute="top" secondItem="9m8-gz-nvR" secondAttribute="bottom" constant="15" id="U63-IW-zAo"/>
+                            <constraint firstItem="35Q-OB-yUZ" firstAttribute="top" secondItem="qFc-bg-3Tv" secondAttribute="bottom" constant="66" id="UVU-rY-fNi"/>
                             <constraint firstItem="bMp-Cd-IiA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="WqD-0f-o3O"/>
                             <constraint firstItem="xBz-ac-Ufb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Y6z-rY-ehq"/>
+                            <constraint firstItem="qFc-bg-3Tv" firstAttribute="top" secondItem="9m8-gz-nvR" secondAttribute="bottom" constant="25" id="ZRG-3Y-BHm"/>
+                            <constraint firstItem="qFc-bg-3Tv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="frO-4a-EAD"/>
                             <constraint firstItem="iRO-IJ-Htg" firstAttribute="centerY" secondItem="bMp-Cd-IiA" secondAttribute="centerY" id="fvg-gi-jVw"/>
+                            <constraint firstItem="9m8-gz-nvR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i9d-ZT-QBo"/>
+                            <constraint firstItem="Gko-iA-oJ5" firstAttribute="centerY" secondItem="bMp-Cd-IiA" secondAttribute="centerY" constant="15" id="t95-2D-PWa"/>
                             <constraint firstItem="xBz-ac-Ufb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tu0-E7-xFw"/>
                             <constraint firstItem="Gko-iA-oJ5" firstAttribute="top" secondItem="bMp-Cd-IiA" secondAttribute="bottom" constant="24" id="waS-UK-pRr"/>
-                            <constraint firstItem="bMp-Cd-IiA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="wk9-pv-03m"/>
+                            <constraint firstItem="bMp-Cd-IiA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="wk9-pv-03m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="35Q-OB-yUZ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Nda-hX-de6"/>
+                                <exclude reference="3Ou-sx-ZzH"/>
+                                <exclude reference="Rif-0P-TqJ"/>
+                                <exclude reference="t95-2D-PWa"/>
+                                <exclude reference="ZRG-3Y-BHm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="35Q-OB-yUZ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Nda-hX-de6"/>
+                                <include reference="3Ou-sx-ZzH"/>
+                                <exclude reference="fvg-gi-jVw"/>
+                                <exclude reference="Bp5-ze-zH5"/>
+                                <include reference="Rif-0P-TqJ"/>
+                                <exclude reference="DHq-wO-y64"/>
+                                <include reference="t95-2D-PWa"/>
+                                <exclude reference="waS-UK-pRr"/>
+                                <exclude reference="U63-IW-zAo"/>
+                                <include reference="ZRG-3Y-BHm"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="136.71875" y="133.0078125"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Code" width="500" height="250"/>
         <image name="Data Image" width="500" height="250"/>
         <image name="Devslopes BG - June 2017-1920x1080" width="1920" height="1080"/>
         <image name="Images Image" width="500" height="250"/>
+        <image name="Videos Image" width="500" height="250"/>
         <image name="cameraButton" width="57" height="57"/>
         <image name="devslopesProfileLogo" width="191" height="191"/>
         <image name="favoriteButton" width="58" height="57"/>
